@@ -1,10 +1,13 @@
+
 # Active Job Application & Follow-up Automation (Google Sheets + Gmail)
+
+> 🌐 **Language / Idioma:** [Português](https://github.com/Kgasil/gmail-hr-outreach-automation) | **English**
+
+---
 
 Automated system built with **Google Apps Script** to manage and execute individualized resume outreach and follow-ups directly within the Google Workspace ecosystem (Sheets, Gmail, and Drive).
 
 This project applies principles of **process governance, data sanitization, and smart cadence**, avoiding mass BCC blasts while maintaining full traceability for every interaction.
-
----
 
 ## Key Features
 
@@ -18,16 +21,12 @@ This project applies principles of **process governance, data sanitization, and 
 - **Thread-Aware Smart Follow-up:** After *N* business days (default: 5 days), the script inspects the specific Gmail thread history. If a reply from the recipient is detected, the workflow closes; otherwise, it sends a follow-up in the same thread.
 - **Safety Lock & Testing Mode:** Features a dry-run toggle (`SEND_ENABLED`) and dedicated test functions (`sendTestEmail` and `sendTestEmailEnglish`) before enabling the daily trigger.
 
----
-
 ## Tech Stack
 
 - **Google Apps Script** (JavaScript ES6+)
 - **Google Sheets API** (Spreadsheet manipulation, status rules, and UI alerts)
 - **Gmail API** (`GmailApp` for sending emails, attachments, thread lookups, and reply detection)
 - **Google Drive API** (`DriveApp` for reading and validating PDF files)
-
----
 
 ## Spreadsheet Structure
 
@@ -37,8 +36,6 @@ This project applies principles of **process governance, data sanitization, and 
 
 2. **`Controle de envios` Tab (Auto-generated):**
    - `Empresa` | `Email de RH` | `Status` | `Data do primeiro envio` | `Data do follow-up` | `ID da conversa Gmail` | `Observação` | `Idioma (PT/EN)`
-
----
 
 ## Setup & Usage
 
@@ -58,15 +55,9 @@ const CONFIG = {
   RESUME_EN_FILE_ID: 'YOUR_EN_RESUME_FILE_ID',
   SENDER_EMAIL: 'your-email@gmail.com',
   SENDER_NAME: 'Your Name',
-  SENDER_PHONE: '(00) 00000-0000',
-  SENDER_LOCATION: 'Your City - State',
-  LINKEDIN_URL: '[https://linkedin.com/in/your-profile/](https://linkedin.com/in/your-profile/)',
-  GITHUB_URL: '[https://github.com/your-username](https://github.com/your-username)',
-  PT_FILE_NAME: 'Resume_PT.pdf',
-  EN_FILE_NAME: 'Resume_EN.pdf',
   DAILY_LIMIT: 15,
   SEND_ENABLED: false, // Keep false until tests are validated
-  SUBJECT: 'Apresentação profissional | Dados, BI, Processos e Operações',
+  SUBJECT: 'Professional Introduction | Data, BI, Processes & Operations',
   FOLLOWUP_BUSINESS_DAYS: 5,
   TIME_TRIGGER_HOUR: 9
 };
