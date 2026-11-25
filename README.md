@@ -61,3 +61,8 @@ const CONFIG = {
   FOLLOWUP_BUSINESS_DAYS: 5,
   TIME_TRIGGER_HOUR: 9
 };
+```
+
+### 3. Safe validation
+
+Run `setupOutreach` to prepare the tracking sheet. Use `sendTestEmail` and `sendTestEmailEnglish` with your own configured account only. Keep `SEND_ENABLED: false` during review. Enable sending only after confirming recipient appropriateness, authorization and Gmail limits. `DAILY_LIMIT` caps new messages, not necessarily the total including follow-ups. Run `removeDailyTrigger` to stop scheduling. Never publish real contact lists, resumes or file IDs. Delivery and anti-spam compliance are not guaranteed.
