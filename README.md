@@ -1,6 +1,11 @@
 
 # Active Job Application & Follow-up Automation (Google Sheets + Gmail)
 
+<!-- kg-personal-portfolio-v1 -->
+
+[KG Professional Portfolio 1.0 — Portfólio pessoal / Personal portfolio](https://kgasil.github.io/portfolio/)
+
+
 > 🌐 **Language / Idioma:** [Português](https://github.com/Kgasil/gmail-hr-outreach-automation) | **English**
 
 ---
