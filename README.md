@@ -5,6 +5,9 @@
 
 [KG Professional Portfolio 1.0 — Portfólio pessoal / Personal portfolio](https://kgasil.github.io/portfolio/)
 
+<!-- kg-current-training -->
+[Formação e experiência atualizadas / Updated education and experience](https://kgasil.github.io/portfolio/resume.html).
+
 
 > 🌐 **Language / Idioma:** [Português](https://github.com/Kgasil/gmail-hr-outreach-automation) | **English**
 
